@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../assets/images/logo/01.svg";
 import pic1 from "../assets/images/preview/01.jpg"
 import pic2 from "../assets/images/preview/02.jpg";
@@ -37,7 +37,10 @@ import StructuralEngineering from "../assets/images/service/07.svg"
 import postConstruction from "../assets/images/service/09.svg";
 import menuTumb from "../assets/images/service/10.webp";
 import arrowupright2 from "../assets/images/icons/arrow-up-right-1.svg";
+import banner1 from "../assets/images/banner/04.jpg";
 const Header = () => {
+    const [onExpand, setOnExpand] = useState(false);
+    const [open, setOpen] = useState(false);
   return (
     <div>
          <header className="heder-one">
@@ -666,8 +669,8 @@ const Header = () => {
                                 <a href="contact.html" className="rts-btn btn-header btn-transparent">Get a Quote
                                     <Image src={arrowUpRight}  width={10} height={10}  alt="arrow" />
                                 </a>
-                                <div className="nav-btn menu-btn" >
-                                    <Image src={barLogo}  width={100} height={100} alt="nav-iamge" />
+                                <div className="nav-btn menu-btn " onClick={()=> setOnExpand(onExpand === false ? true : false) }  >
+                                    <Image src={barLogo}  width={50} height={50} alt="nav-iamge" />
                                 </div>
                             </div>
                         </div>
@@ -679,7 +682,7 @@ const Header = () => {
         </div>
     </div>
 </header>
-<header className="heder-one header--sticky">
+<header className="heder-one header--sticky ">
     <div className="header-two-container">
         <div className="row">
             <div className="col-12">
@@ -1306,7 +1309,7 @@ const Header = () => {
                                     <Image src={arrowUpRight} alt="arrow"  width={100} height={100} />
                                 </a>
                                 <div className="nav-btn menu-btn" id="menu-btn">
-                                    <Image src={barLogo} alt="nav-iamge"  width={100} height={100} />
+                                    <Image src={barLogo} alt="nav-iamge"  width={80} height={80} />
                                 </div>
                             </div>
                         </div>
@@ -1318,6 +1321,81 @@ const Header = () => {
         </div>
     </div>
 </header>
+{onExpand && (
+<div id="side-bar" className="bg-dark flex flex-col mt-[-20px] header-two">
+    <button className="close-icon-menu"><i className="far fa-times"></i></button>
+    
+    <div className="inner-main-wrapper-desk">
+        <div className="thumbnail">
+            <Image src={banner1} alt="elevate"  width={10} height={10} />
+        </div>
+        <div className="inner-content">
+            <h4 className="title">We Build Building and Great Constructive Homes.</h4>
+            <p className="disc">
+                We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly
+                master new technologies.
+            </p>
+            <div className="footer">
+                <h4 className="title">Got a project in mind?</h4>
+                <a href="contact.html" className="rts-btn btn-primary">Let's talk</a>
+            </div>
+        </div>
+    </div>
+  
+    <div className="mobile-menu d-block d-xl-none">
+        <nav className="nav-main mainmenu-nav mt--30">
+            <ul className="mainmenu metismenu" id="mobile-menu-active">
+                <li className="has-droupdown">
+                    <a href="#" className="main"onClick={()=>setOpen(false)} >Home</a>
+                    
+                </li>
+                
+                <li className="has-droupdown">
+                    <a href="#" className="main" onClick={()=> setOpen(open === false ? true : false)}>Services</a>
+                  {open && (  <ul className="submenu">
+                        <li><a className="mobile-menu-link" href="service.html">Service</a></li>
+                        <li><a className="mobile-menu-link" href="service-single.html">Service Single</a></li>
+                        <li><a className="mobile-menu-link" href="service-single-two.html">Service Single 2</a></li>
+                        <li><a className="mobile-menu-link" href="service-single-three.html">Service Single 3</a></li>
+                        <li><a className="mobile-menu-link" href="service-single-four.html">Service Single 4</a></li>
+                        <li><a className="mobile-menu-link" href="service-single-five.html">Service Single 5</a></li>
+                    </ul> )}
+                </li>
+             
+             
+               
+                <li>
+                    <a href="#" className="main" onClick={()=>setOpen(false)}>Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div className="social-wrapper-one">
+            <ul className='list-none flex gap-[20px] '>
+                <li className='border-[4px] px-4 py-2'>
+                    <a href="#">
+                        <i className="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li  className='border-[4px] px-4 py-2'>
+                    <a href="#">
+                        <i className="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li  className='border-[4px] px-4 py-2'>
+                    <a href="#">
+                        <i className="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li  className='border-[4px] px-4 py-2'>
+                    <a href="#">
+                        <i className="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>)}
     </div>
   )
 }
