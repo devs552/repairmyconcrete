@@ -1321,81 +1321,75 @@ const Header = () => {
         </div>
     </div>
 </header>
-{onExpand && (
-<div id="side-bar" className="bg-dark flex flex-col mt-[-20px] header-two">
-    <button className="close-icon-menu"><i className="far fa-times"></i></button>
-    
-    <div className="inner-main-wrapper-desk">
-        <div className="thumbnail">
-            <Image src={banner1} alt="elevate"  width={10} height={10} />
-        </div>
-        <div className="inner-content">
-            <h4 className="title">We Build Building and Great Constructive Homes.</h4>
-            <p className="disc">
-                We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly
-                master new technologies.
-            </p>
-            <div className="footer">
-                <h4 className="title">Got a project in mind?</h4>
-                <a href="contact.html" className="rts-btn btn-primary">Let's talk</a>
-            </div>
-        </div>
-    </div>
-  
-    <div className="mobile-menu d-block d-xl-none">
-        <nav className="nav-main mainmenu-nav mt--30">
-            <ul className="mainmenu metismenu" id="mobile-menu-active">
-                <li className="has-droupdown">
-                    <a href="#" className="main"onClick={()=>setOpen(false)} >Home</a>
-                    
-                </li>
-                
-                <li className="has-droupdown">
-                    <a href="#" className="main" onClick={()=> setOpen(open === false ? true : false)}>Services</a>
-                  {open && (  <ul className="submenu">
-                        <li><a className="mobile-menu-link" href="service.html">Service</a></li>
-                        <li><a className="mobile-menu-link" href="service-single.html">Service Single</a></li>
-                        <li><a className="mobile-menu-link" href="service-single-two.html">Service Single 2</a></li>
-                        <li><a className="mobile-menu-link" href="service-single-three.html">Service Single 3</a></li>
-                        <li><a className="mobile-menu-link" href="service-single-four.html">Service Single 4</a></li>
-                        <li><a className="mobile-menu-link" href="service-single-five.html">Service Single 5</a></li>
-                    </ul> )}
-                </li>
-             
-             
-               
-                <li>
-                    <a href="#" className="main" onClick={()=>setOpen(false)}>Contact Us</a>
-                </li>
-            </ul>
-        </nav>
 
-        <div className="social-wrapper-one">
-            <ul className='list-none flex gap-[20px] '>
-                <li className='border-[4px] px-4 py-2'>
-                    <a href="#">
-                        <i className="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li  className='border-[4px] px-4 py-2'>
-                    <a href="#">
-                        <i className="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li  className='border-[4px] px-4 py-2'>
-                    <a href="#">
-                        <i className="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-                <li  className='border-[4px] px-4 py-2'>
-                    <a href="#">
-                        <i className="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
+{onExpand && (
+  <div id="side-bar" className="bg-dark flex flex-col mt-[-20px] header-two">
+    <button className=" w-[15%] h-[15%]" onClick={()=>setOnExpand(false)}>
+      X
+    </button>
+
+    <div className="inner-main-wrapper-desk">
+      <div className="thumbnail">
+        <Image src={banner1} alt="elevate" width={500} height={100} />
+      </div>
+      <div className="inner-content">
+        <h4 className="title">We Build Building and Great Constructive Homes.</h4>
+        <p className="disc">
+          We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly
+          master new technologies.
+        </p>
+        <div className="footer">
+          <h4 className="title">Got a project in mind?</h4>
+          <a href="contact.html" className="rts-btn btn-primary">Let's talk</a>
         </div>
+      </div>
     </div>
-</div>)}
+
+    <div className="mobile-menu d-block d-xl-none">
+      <nav className="nav-main mainmenu-nav mt--30">
+        <ul className="mainmenu metismenu" id="mobile-menu-active">
+          <li className="has-droupdown">
+            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Home</a>
+          </li>
+          <li className="has-droupdown">
+            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(!open); }}>Services</a>
+            {open && (
+              <ul className="submenu">
+                <li><a className="mobile-menu-link" href="service.html">Service</a></li>
+                <li><a className="mobile-menu-link" href="service-single.html">Service Single</a></li>
+                <li><a className="mobile-menu-link" href="service-single-two.html">Service Single 2</a></li>
+                <li><a className="mobile-menu-link" href="service-single-three.html">Service Single 3</a></li>
+                <li><a className="mobile-menu-link" href="service-single-four.html">Service Single 4</a></li>
+                <li><a className="mobile-menu-link" href="service-single-five.html">Service Single 5</a></li>
+              </ul>
+            )}
+          </li>
+          <li>
+            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="social-wrapper-one">
+        <ul className="list-none flex gap-[20px]">
+          <li className="border px-4 py-2">
+            <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li className="border px-4 py-2">
+            <a href="#"><i className="fa-brands fa-twitter"></i></a>
+          </li>
+          <li className="border px-4 py-2">
+            <a href="#"><i className="fa-brands fa-youtube"></i></a>
+          </li>
+          <li className="border px-4 py-2">
+            <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+)}
+
     </div>
   )
 }
