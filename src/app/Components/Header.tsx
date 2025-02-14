@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -84,143 +85,9 @@ const Header = () => {
                         <div className="bottom">
                             <div className="nav-area">
                                 <ul className="">
-                                    <li className="has-dropdown main-nav has-demo-down  project-a-after">
-                                        <a href="#">Home</a>
-                                        <ul className="submenu menu-home">
-                                            <li>
-                                                <a >
-                                                    <Image src={pic1}  width={250} height={250} alt="preview" />
-                                                    <span>Demo Construction</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-one.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-two.html">
-                                                    <Image src={pic2} width={250} height={250} alt="preview" />
-                                                    <span>Demo Construction</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-two.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-two.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-three.html">
-                                                    <Image src={pic3} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Renovation</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-three.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-three.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-four.html">
-                                                    <Image src={pic4} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Building</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-four.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-four.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-five.html">
-                                                    <Image src={pic5} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Interior</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-five.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-five.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-six.html">
-                                                    <Image src={pic6} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Industrial</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-six.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-six.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-seven.html">
-                                                    <Image src={pic7} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Factory</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-seven.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-seven.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-eight.html">
-                                                    <Image src={pic8} alt="preview"  width={250} height={250} />
-                                                    <span>Demo Engineering</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-eight.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-eight.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-nine.html">
-                                                    <Image src={pic9} alt="preview" width={250} height={250} />
-                                                    <span>Demo Video</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-nine.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-nine.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="coming-soon">
-                                                <a href="#">
-                                                    <Image src={commingSoon} alt="preview"  width={250} height={250} />
-                                                    <span>Coming Soon</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="#">Coming Soon</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="#">Coming Soon</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li className="main-nav   ">
+                                        <Link href="/">Home</Link>
+                                    
                                     </li>
 
                                     <li className="main-nav has-dropdown mega-menu">
@@ -232,7 +99,7 @@ const Header = () => {
                                                         <div className="col-lg-4">
                                                             <ul className="mega-menu-item parent-nav">
                                                                 <li>
-                                                                    <a href="service-single.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={service1}  width={250} height={250}
@@ -248,10 +115,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-two.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={service2}  width={250} height={250}
@@ -267,10 +134,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-three.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={service3}  width={250} height={250}
@@ -287,14 +154,14 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="col-lg-4">
                                                             <ul className="mega-menu-item parent-nav">
                                                                 <li>
-                                                                    <a href="service-single-four.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={service4}  width={250} height={250}
@@ -310,10 +177,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-five.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={service5}  width={250} height={250}
@@ -329,10 +196,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="contact.html"
+                                                                    <Link href="/service"
                                                                         className="free-consultation">
                                                                         <div className="single-service-menu">
                                                                             <div className="info">
@@ -346,7 +213,7 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -723,143 +590,9 @@ const Header = () => {
                         <div className="bottom">
                             <div className="nav-area">
                                 <ul className="">
-                                    <li className="has-dropdown main-nav has-demo-down  project-a-after">
-                                        <a href="#">Home</a>
-                                        <ul className="submenu menu-home">
-                                            <li>
-                                                <a href="index.html">
-                                                    <Image src={demoConstruction} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Construction</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-one.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-two.html">
-                                                    <Image src={demoConstuction2} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Construction</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-two.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-two.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-three.html">
-                                                    <Image src={demoRenovation} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Renovation</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-three.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-three.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-four.html">
-                                                    <Image src={demoBuilding} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Building</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-four.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-four.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-five.html">
-                                                    <Image src={demoInterior} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Interior</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-five.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-five.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-six.html">
-                                                    <Image src={demoIndustrial} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Industrial</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-six.html">Multipage</a>
-                                                    </li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-six.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-seven.html">
-                                                    <Image src={demoFactory} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Factory</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-seven.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-seven.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-eight.html">
-                                                    <Image src={demoEngineering} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Engineering</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-eight.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-eight.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index-nine.html">
-                                                    <Image src={demoVedio} alt="preview"  width={100} height={100} />
-                                                    <span>Demo Video</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="index-nine.html">Multipage</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="onepage-nine.html">Onepage</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="coming-soon">
-                                                <a href="#">
-                                                    <Image src={commingSoon} alt="preview"  width={100} height={100} />
-                                                    <span>Coming Soon</span>
-                                                </a>
-                                                <ul className="page">
-                                                    <li className="multipage"><a className="rts-btn btn-primary"
-                                                            href="#">Coming Soon</a></li>
-                                                    <li className="onepage"><a className="rts-btn btn-primary"
-                                                            href="#">Coming Soon</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li className=" main-nav   project-a-after">
+                                        <Link href="/">Home</Link>
+                                       
                                     </li>
 
                                     <li className="main-nav has-dropdown mega-menu">
@@ -871,7 +604,7 @@ const Header = () => {
                                                         <div className="col-lg-4">
                                                             <ul className="mega-menu-item parent-nav">
                                                                 <li>
-                                                                    <a href="service-single.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={residentialConstruction}
@@ -887,10 +620,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-two.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={RR}  width={100} height={100}
@@ -906,10 +639,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-three.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={DesignBuilding}  width={100} height={100}
@@ -926,14 +659,14 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                         <div className="col-lg-4">
                                                             <ul className="mega-menu-item parent-nav">
                                                                 <li>
-                                                                    <a href="service-single-four.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={StructuralEngineering}  width={100} height={100}
@@ -949,10 +682,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="service-single-five.html">
+                                                                    <Link href="/service">
                                                                         <div className="single-service-menu">
                                                                             <div className="icon">
                                                                                 <Image src={postConstruction}  width={100} height={100}
@@ -968,10 +701,10 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="contact.html"
+                                                                    <Link href="/contact"
                                                                         className="free-consultation">
                                                                         <div className="single-service-menu">
                                                                             <div className="info">
@@ -985,7 +718,7 @@ const Header = () => {
                                                                                 </p>
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -1349,23 +1082,23 @@ const Header = () => {
       <nav className="nav-main mainmenu-nav mt--30">
         <ul className="mainmenu metismenu" id="mobile-menu-active">
           <li className="has-droupdown">
-            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Home</a>
+            <Link href="/" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Home</Link>
           </li>
           <li className="has-droupdown">
-            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(!open); }}>Services</a>
+            <Link href="/service" className="main" onClick={(e) => { e.preventDefault(); setOpen(!open); }}>Services</Link>
             {open && (
               <ul className="submenu">
-                <li><a className="mobile-menu-link" href="service.html">Service</a></li>
-                <li><a className="mobile-menu-link" href="service-single.html">Service Single</a></li>
-                <li><a className="mobile-menu-link" href="service-single-two.html">Service Single 2</a></li>
-                <li><a className="mobile-menu-link" href="service-single-three.html">Service Single 3</a></li>
-                <li><a className="mobile-menu-link" href="service-single-four.html">Service Single 4</a></li>
-                <li><a className="mobile-menu-link" href="service-single-five.html">Service Single 5</a></li>
+                <li><Link className="mobile-menu-link" href="/service">Service</Link></li>
+                <li><Link className="mobile-menu-link" href="/service">Service Single</Link></li>
+                <li><Link className="mobile-menu-link" href="/service">Service Single 2</Link></li>
+                <li><Link className="mobile-menu-link" href="/service">Service Single 3</Link></li>
+                <li><Link className="mobile-menu-link" href="/service">Service Single 4</Link></li>
+                <li><Link className="mobile-menu-link" href="/service">Service Single 5</Link></li>
               </ul>
             )}
           </li>
           <li>
-            <a href="#" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Contact Us</a>
+            <Link href="/contact" className="main" onClick={(e) => { e.preventDefault(); setOpen(false); }}>Contact Us</Link>
           </li>
         </ul>
       </nav>
